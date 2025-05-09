@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C&E Pizza Pasta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">
+      <img src="img/logo.png" alt="C&E Pizza Pasta" />
+    </div>
+    <nav class="main-nav">
+      <a href="home.html">Home</a>
+      <a href="index.html">Menu</a>
+      <a href="#">Promos</a>
+      <a href="book_A_party.html">Book a Party</a>
+    </nav>
+    <div class="header-actions">
+      <button class="login-btn"><a href="login.html">Login</a></button>
+   
+      <span id="searchIcon" style="cursor: pointer;">
+        <button class="icon search-icon"><img src="img/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
+      </span>
+     
+      <div class="icon cart-icon">🛒</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-banner">
+
+      
+      <!-- Your hidden or visible search container -->
+      <div class="search" id="search-container" style="display: none;">
+        <input type="text" placeholder="Search " id="searchInput" />
+      </div>
+
+      <div class="slider-container">
+        <button class="slider-btn left" onclick="scrollSlider(-1)">&#10094;</button>
+      
+        <div class="slider" id="productSlider">
+          <div class="product-list">
+            <button>
+              <img src="img/drinks-image.png" alt="" />
+              <samp id="text">Drinks</samp>
+            </button>
+          </div>
+          <div class="product-list">
+            <button>
+              <img src="img/Your paragraph.png" alt="" />
+            </button>
+          </div>
+          <div class="product-list">
+            <button>
+              <img src="img/Drinks-removebg-preview.png" alt="" />
+            </button>
+          </div>
+          <div class="product-list">
+            <button>
+              <img src="img/image4.png" alt="" />
+            </button>
+          </div>
+        </div>
+      
+        <button class="slider-btn right" onclick="scrollSlider(1)">&#10095;</button>
+      </div>
+      
+    </section>
+
+    <section class="menu-gallery">
+      <h2>Our Menu</h2>
+      <div class="items">
+        <div class="product-card">
+          <button onclick="scrollSlider(1)">
+            <div class="product-img">
+              <img src="img/product1.png.png" alt="Pizza 1">
+              <label for="product">Promos</label>
+            </div>
+          </button>
+        </div>
+        <div class="product-card">
+          <button onclick="scrollSlider(1)">
+            <div class="product-img">
+              <img src="img/powerbundles.png" alt="Pizza 2">
+              <label for="product">Power bundles</label>
+            </div>
+          </button>
+        </div>
+        <div class="product-card">
+          <button onclick="scrollSlider(1)">
+            <div class="product-img">
+              <img src="img/2.png" alt="Pasta 1">
+              <label for="product">Pizza</label>
+            </div>
+          </button>
+        </div>
+        <div class="product-card">
+          <button onclick="scrollSlider(1)">
+            <div class="product-img">
+              <img src="img/1.png" alt="Pasta 2">
+              <label for="product">Drinks</label>
+            </div>
+          </button>
+        </div>
+        <div class="product-card">
+          <button onclick="scrollSlider(1)">
+            <div class="product-img">
+              <img src="img/pasta.png" alt="Pasta 2">
+              <label for="product">Pasta</label>
+            </div>
+          </button>
+        </div>
+        <div class="product-card">
+          <button onclick="scrollSlider(1)">
+            <div class="product-img">
+              <img src="img/Your paragraph text.png" alt="Pasta 2">
+              <label for="product">Promos</label>
+            </div>
+          </button>
+        </div>
+        <div class="product-card">
+          <button onclick="scrollSlider(1)">
+            <div class="product-img">
+              <img src="img/th (18).jpg" alt="Pasta 2">
+              <label for="product">Promos</label>
+            </div>
+          </button>
+        </div>
+        <div class="product-card">
+          <button onclick="scrollSlider(1)">
+            <div class="product-img">
+              <img src="img/drinks-image.png" alt="Pasta 2">
+              <label for="product">Promos</label>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 C&E Pizza Pasta. All rights reserved.</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+  
+</body>
+</html>
